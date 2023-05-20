@@ -20,7 +20,7 @@ const existeUsuarioID = async (id) => {
     }
 };
 const esUnNumero = (value) => {
-  if (isNaN(value) || parseInt(value) <= 0) {
+  if (isNaN(value) || parseInt(value) < 0) {
     throw new Error("El valor debe ser un número mayor a 0");
   }
   return true;
